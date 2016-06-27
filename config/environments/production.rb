@@ -75,8 +75,10 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
+  config.action_mailer.perform_deliveries = true
+
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = { host: 'cpinterest.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'cpinterested.herokuapp.com' }
 
 end
