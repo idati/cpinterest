@@ -90,7 +90,7 @@ Rails.application.configure do
   :password             => 'sportwaagen'
   }
 
-  config.active_record.dump_schema_after_migration = false
+  #config.active_record.dump_schema_after_migration = false
 
 
 
